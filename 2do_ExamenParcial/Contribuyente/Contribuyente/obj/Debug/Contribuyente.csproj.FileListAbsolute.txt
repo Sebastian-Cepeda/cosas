@@ -1,0 +1,10 @@
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\bin\Debug\Contribuyente.exe.config
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\bin\Debug\Contribuyente.exe
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\bin\Debug\Contribuyente.pdb
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.csprojAssemblyReference.cache
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.Form1.resources
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.Properties.Resources.resources
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.csproj.GenerateResource.cache
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.csproj.CoreCompileInputs.cache
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.exe
+F:\SIS258\SistemasDistribuidosASCC\2do_ExamenParcial\Contribuyente\Contribuyente\obj\Debug\Contribuyente.pdb
