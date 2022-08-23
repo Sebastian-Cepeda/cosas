@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsultaSaldo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rocuenta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaSaldoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConsultaSaldoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultaSaldoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaSaldo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSaldoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaSaldoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BancoBNBSoap">
+    <wsdl:operation name="ConsultaSaldo">
+      <wsdl:input message="tns:ConsultaSaldoSoapIn" />
+      <wsdl:output message="tns:ConsultaSaldoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BancoBNBSoap" type="tns:BancoBNBSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaSaldo">
+      <soap:operation soapAction="http://tempuri.org/ConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BancoBNBSoap12" type="tns:BancoBNBSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaSaldo">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BancoBNB">
+    <wsdl:port name="BancoBNBSoap" binding="tns:BancoBNBSoap">
+      <soap:address location="https://localhost:44321/BancoBNB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BancoBNBSoap12" binding="tns:BancoBNBSoap12">
+      <soap12:address location="https://localhost:44321/BancoBNB.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
